@@ -19,6 +19,8 @@ void CALC_voidWelcome(void)
 		LCD_voidWriteString("Simple Calculator");
 		LCD_voidGoTOXY(2,6);
 		LCD_voidWriteString("Project");
+		LCD_voidGoTOXY(3,0);
+		LCD_voidWriteString("Ibrahim-AbdulRahman");
 		_delay_ms(5000);
 		LCD_voidClearDisplay();
 		LCD_voidGoTOXY(0,0);
