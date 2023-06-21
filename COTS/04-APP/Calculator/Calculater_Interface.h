@@ -1,0 +1,9 @@
+
+
+#ifndef APP_CALC_DRIVER_CALCULATER_INTERFACE_H_
+#define APP_CALC_DRIVER_CALCULATER_INTERFACE_H_
+
+void CALC_voidInit(void);
+void CALC_voidCalculate(void);
+
+#endif /* APP_CALC_DRIVER_CALCULATER_INTERFACE_H_ */
