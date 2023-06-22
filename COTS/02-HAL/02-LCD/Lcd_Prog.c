@@ -229,7 +229,7 @@ void LCD_voidGoTOXY(uint8 Copy_u8XPOS,uint8 Copy_u8YPOS)
 	}
 }
 
-void LCD_voidWriteSpecialCharacter(uint8* Copy_arru8Pattern,uint8 Copy_u8Block)
+void LCD_voidWriteSpecialCharacter(char* Copy_arru8Pattern,uint8 Copy_u8Block)
 {
 	LCD_voidSendCMD(Copy_u8Block*8+64);
 	int count;
