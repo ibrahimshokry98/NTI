@@ -13,8 +13,12 @@
 
 void System_Init (void)
 {
+	char character1[] ={0x0E,0x0E,0x04,0x0E,0x15,0x04,0x0A,0x11};
+	char character2[]= {0x00,0x00,0x10,0x0A,0x1F,0x02,0x00,0x00};
 	LCD_voidInit();
 	ADC_voidInit(Prescaler128);
+	LCD_voidWriteSpecialCharacter(character1,0);
+	LCD_voidWriteSpecialCharacter(character2,1);
 	uint8 txt[] = "Status ";
 	LCD_voidWriteString(txt);
 	LCD_voidGoTOXY(1,0);
@@ -29,11 +33,11 @@ void System_start(void)
 	LCD_voidGoTOXY(1,0);
 	if (read<60)
 	{
-		LCD_voidWriteChar('W');	
+		LCD_voidWriteChar(0);	
 	}
 	else
 	{
-		LCD_voidWriteChar('S');
+		LCD_voidWriteChar(1);
 	}
 }
 
