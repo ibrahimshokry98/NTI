@@ -34,7 +34,7 @@ uint32 Calc_uint32Power(uint8 Exponent)
 	}
 	return Result;
 }
-uint8 CALC_uReadFromUser(float32* Ptr_Operand, uint8* DigitCounter)
+uint8 CALC_uint8ReadFromUser(float32* Ptr_Operand, uint8* DigitCounter)
 {
 	uint8 Digits=0;
 	*DigitCounter=0;
