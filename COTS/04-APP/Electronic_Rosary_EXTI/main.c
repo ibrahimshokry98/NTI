@@ -57,12 +57,6 @@ void func1 (void)
 			SS2count = 0;
 		}
 	}
-	SS_Display(&SS1,SS1count);
-	SS_Disable(&SS2);
-	_delay_ms(10);
-	SS_Display(&SS2,SS2count);
-	SS_Disable(&SS1);
-	_delay_ms(10);
 }
 void func2 (void)
 {
